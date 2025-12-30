@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBU5 Unit 7 Lesson 2 - Bài tập tiếng Anh</title>
+    
+    <!-- Icon tab trình duyệt (thỏ hồng dễ thương) -->
+    <link rel="icon" href="https://img.icons8.com/fluency/48/000000/bunny.png" type="image/png">
+
+    <!-- Meta preview khi share link (ảnh + tiêu đề) -->
+    <meta property="og:title" content="EBU5 Unit 7 Lesson 2 - Làm bài tập vui nhé!">
+    <meta property="og:description" content="Bài tập tiếng Anh Unit 7 Lesson 2 - Click để làm ngay cùng bạn! 🐰✨">
+    <meta property="og:image" content="https://www.liveworksheets.com/embed/worksheets/8324997.png"> <!-- ảnh preview auto của worksheet, nếu không được thì thay link ảnh khác -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="hhttps://www.liveworksheets.com/c?a=s&g=FLYERS&s=EBU5&t=Yqy7FnAHYs&sr=y&is=y&ia=y&l=3s&i=otdcnns&r=my&f=dzdfudtz&ms=uz&cd=p-ti3-l---piii0pjznkllpvingnexnzgxg&mw=hs"> <!-- thay bằng link thật khi up -->
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+                         'Helvetica Neue', Arial, sans-serif;
+            font-weight: 500;
+            background-color: #fff0f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .popup-overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup {
+            background: #fff;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            max-width: 400px;
+            animation: bounceIn 0.5s ease-out;
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        h1, h2 { color: #ff69b4; margin-bottom: 20px; font-weight: 600; }
+        .emoji { font-size: 60px; margin-bottom: 20px; }
+
+        .buttons { display: flex; justify-content: center; gap: 20px; }
+        button {
+            padding: 12px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            font-weight: 600;
+        }
+        button:hover { transform: scale(1.1); }
+
+        .yes-btn { background: #90ee90; color: white; }
+        .no-btn  { background: #ff6347; color: white; }
+
+        .main-content {
+            display: none;
+            width: 90%;
+            max-width: 800px;
+            height: 90vh;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            padding: 20px;
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .start-btn {
+            padding: 20px 60px;
+            font-size: 32px;
+            background: linear-gradient(45deg, #ff69b4, #ff1493);
+            color: white;
+            border: none;
+            border-radius: 60px;
+            cursor: pointer;
+            box-shadow: 0 8px 25px rgba(255,105,180,0.4);
+            transition: all 0.3s;
+        }
+        .start-btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 12px 35px rgba(255,105,180,0.6);
+        }
+
+        .three-yes {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Popup 1 -->
+    <div id="firstPopup" class="popup-overlay">
+        <div class="popup">
+            <div class="emoji">🐰✨</div>
+            <h2>Bạn đã sẵn sàng làm bài chưa nhỉ?</h2>
+            <div class="buttons">
+                <button class="yes-btn" onclick="showMain()">Yes</button>
+                <button class="no-btn" onclick="showSecondPopup()">No</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup 2 -->
+    <div id="secondPopup" class="popup-overlay" style="display: none;">
+        <div class="popup">
+            <div class="emoji">😤🐥</div>
+            <h2>Ê! Ê! Ê! Sao lại bấm No thế, bấm Yes đi chứ!</h2>
+            <div class="three-yes">
+                <button class="yes-btn" onclick="showMain()">Yes</button>
+                <button class="yes-btn" onclick="showMain()">Yes</button>
+                <button class="yes-btn" onclick="showMain()">Yes</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Màn hình chính -->
+    <div id="mainContent" class="main-content">
+        <h1 class="title">CHÚC BẠN LÀM BÀI TỐT NHÉ! 💕</h1>
+        <p style="font-size: 20px; color: #555; margin: 20px 0;">
+            Click nút dưới để mở bài tập ngay nhé! (mở tab mới, làm thoải mái nha)
+        </p>
+        <button class="start-btn" onclick="openWorksheet()">Mở bài tập ngay! 🐰</button>
+    </div>
+
+    <script>
+        function showMain() {
+            document.getElementById('firstPopup').style.display = 'none';
+            document.getElementById('secondPopup').style.display = 'none';
+            document.getElementById('mainContent').style.display = 'flex';
+            document.body.style.backgroundColor = '#f0f8ff';
+        }
+
+        function showSecondPopup() {
+            document.getElementById('firstPopup').style.display = 'none';
+            document.getElementById('secondPopup').style.display = 'flex';
+        }
+
+        function openWorksheet() {
+            // Link trực tiếp - thay bằng link thật nếu khác
+            window.open('https://www.liveworksheets.com/c?a=s&g=FLYERS&s=EBU5&t=Yqy7FnAHYs&sr=y&is=y&ia=y&l=3s&i=otdcnns&r=my&f=dzdfudtz&ms=uz&cd=p-ti3-l---piii0pjznkllpvingnexnzgxg&mw=hs', '_blank');
+            // Nếu dùng link bạn gửi (nhưng hiện 404), thay ở đây:
+            // window.open('https://www.liveworksheets.com/c?a=s&g=FLYERS&s=EBU5&t=Yqy7FnAHYs&sr=y&is=y&ia=y&l=3s&i=otdcnns&r=my&f=dzdfudtz&ms=uz&cd=p-ti3-l---piii0pjznkllpvingnexnzgxg&mw=hs', '_blank');
+        }
+    </script>
+
+</body>
+</html>
