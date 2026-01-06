@@ -1,175 +1,515 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EBU5 Unit 7 Lesson 2 - Bài tập tiếng Anh</title>
-    
-    <!-- Icon tab trình duyệt (thỏ hồng dễ thương) -->
-    <link rel="icon" href="https://img.icons8.com/fluency/48/000000/bunny.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <!-- Meta preview khi share link (ảnh + tiêu đề) -->
-    <meta property="og:title" content="EBU5 Unit 7 Lesson 2 - Làm bài tập vui nhé!">
-    <meta property="og:description" content="Bài tập tiếng Anh Unit 7 Lesson 2 - Click để làm ngay cùng bạn! 🐰✨">
-    <meta property="og:image" content="https://www.liveworksheets.com/embed/worksheets/8324997.png"> <!-- ảnh preview auto của worksheet, nếu không được thì thay link ảnh khác -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="hhttps://www.liveworksheets.com/c?a=s&g=FLYERS&s=EBU5&t=Yqy7FnAHYs&sr=y&is=y&ia=y&l=3s&i=otdcnns&r=my&f=dzdfudtz&ms=uz&cd=p-ti3-l---piii0pjznkllpvingnexnzgxg&mw=hs"> <!-- thay bằng link thật khi up -->
+  <!-- Tiêu đề trang và preview khi chia sẻ link -->
+  <title>Chú Ong Chăm Chỉ - Bài Tập Unit 7 Lesson 3 🐝📚</title>
 
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
-                         'Helvetica Neue', Arial, sans-serif;
-            font-weight: 500;
-            background-color: #fff0f5;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-        }
+  <!-- Open Graph (Facebook, Zalo, Messenger, LinkedIn...) -->
+  <meta property="og:title" content="Chú Ong Chăm Chỉ - Bài Tập Unit 7 Lesson 3 🐝📚" />
+  <meta property="og:description" content="Chào các em! Hãy cùng chú ong chăm chỉ làm bài tập về nhà để ngày càng tiến bộ nhé! Click để bắt đầu nào! 🚀" />
+  <meta property="og:image" content="https://www.clipartmax.com/png/middle/207-2072783_homework-bee-with-a-pencil.png" />
+  <meta property="og:image:alt" content="Chú ong dễ thương cầm bút chì làm bài tập" />
+  <meta property="og:image:width" content="840" />
+  <meta property="og:image:height" content="643" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-link-here.com" /> <!-- Thay bằng link thật khi host -->
 
-        .popup-overlay {
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: rgba(0,0,0,0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
+  <!-- Twitter Card (X/Twitter) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Chú Ong Chăm Chỉ - Bài Tập Unit 7 Lesson 3 🐝📚" />
+  <meta name="twitter:description" content="Chào các em! Hãy cùng chú ong chăm chỉ làm bài tập về nhà để ngày càng tiến bộ nhé! Click để bắt đầu nào! 🚀" />
+  <meta name="twitter:image" content="https://www.clipartmax.com/png/middle/207-2072783_homework-bee-with-a-pencil.png" />
 
-        .popup {
-            background: #fff;
-            border-radius: 20px;
-            padding: 30px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            max-width: 400px;
-            animation: bounceIn 0.5s ease-out;
-        }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-        @keyframes bounceIn {
-            0% { transform: scale(0.8); opacity: 0; }
-            100% { transform: scale(1); opacity: 1; }
-        }
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
-        h1, h2 { color: #ff69b4; margin-bottom: 20px; font-weight: 600; }
-        .emoji { font-size: 60px; margin-bottom: 20px; }
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+      min-height: 100vh;
+      overflow: hidden;
+      cursor: url('https://cdn.cursor.sh/cursors/book-open.png'), auto;
+      position: relative;
+    }
 
-        .buttons { display: flex; justify-content: center; gap: 20px; }
-        button {
-            padding: 12px 30px;
-            font-size: 18px;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: transform 0.2s;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            font-weight: 600;
-        }
-        button:hover { transform: scale(1.1); }
+    /* Ong bay lung linh */
+    .flying-bee {
+      position: absolute;
+      font-size: 60px;
+      pointer-events: none;
+      animation: fly linear infinite;
+      z-index: 10;
+    }
 
-        .yes-btn { background: #90ee90; color: white; }
-        .no-btn  { background: #ff6347; color: white; }
+    @keyframes fly {
+      0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { transform: translate(var(--dx), var(--dy)) rotate(var(--rot)); opacity: 0; }
+    }
 
-        .main-content {
-            display: none;
-            width: 90%;
-            max-width: 800px;
-            height: 90vh;
-            background: white;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            padding: 20px;
-            text-align: center;
-            flex-direction: column;
-            justify-content: center;
-        }
+    /* Modal chung */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+    }
 
-        .start-btn {
-            padding: 20px 60px;
-            font-size: 32px;
-            background: linear-gradient(45deg, #ff69b4, #ff1493);
-            color: white;
-            border: none;
-            border-radius: 60px;
-            cursor: pointer;
-            box-shadow: 0 8px 25px rgba(255,105,180,0.4);
-            transition: all 0.3s;
-        }
-        .start-btn:hover {
-            transform: scale(1.08);
-            box-shadow: 0 12px 35px rgba(255,105,180,0.6);
-        }
+    .modal-overlay.active {
+      opacity: 1;
+      pointer-events: all;
+    }
 
-        .three-yes {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-    </style>
+    .modal {
+      background: white;
+      border-radius: 24px;
+      padding: 32px 28px;
+      width: 92%;
+      max-width: 580px;
+      max-height: 88vh;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+      text-align: center;
+      transform: scale(0.75);
+      opacity: 0;
+      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .modal.active {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    .bee {
+      font-size: 78px;
+      margin-bottom: 16px;
+      animation: wave 2.2s infinite ease-in-out;
+      display: inline-block;
+      transform-origin: bottom;
+    }
+
+    @keyframes wave {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(14deg); }
+      50% { transform: rotate(-10deg); }
+      75% { transform: rotate(8deg); }
+    }
+
+    h1, h2, h3 {
+      font-family: 'Varela Round', sans-serif;
+      color: #2c3e50;
+    }
+
+    h1 { font-size: 32px; }
+    h2 { font-size: 26px; margin-bottom: 12px; }
+    h3 { font-size: 24px; color: #d35400; margin-bottom: 8px; }
+
+    p {
+      font-size: 17px;
+      color: #5d6d7e;
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+
+    /* Phần giới thiệu bài tập */
+    .homework-preview {
+      background: #fff3cd;
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px 0;
+      border: 2px dashed #feca57;
+    }
+
+    .homework-preview img {
+      width: 140px;
+      height: auto;
+      margin-bottom: 12px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .homework-preview p {
+      font-size: 16px;
+      color: #c0392b;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+
+    .btn {
+      padding: 14px 36px;
+      font-size: 17px;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.28s ease;
+    }
+
+    .btn-primary {
+      background: #feca57;
+      color: #2c3e50;
+      box-shadow: 0 6px 0 #ff9f1a;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 0 #ff9f1a;
+    }
+
+    .btn-secondary {
+      background: #dfe6e9;
+      color: #636e72;
+      box-shadow: 0 6px 0 #b2bec3;
+    }
+
+    .btn-secondary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 0 #b2bec3;
+    }
+
+    .btn-vocab {
+      background: #a29bfe;
+      color: white;
+      box-shadow: 0 6px 0 #6c5ce7;
+      font-size: 17px;
+      padding: 15px 38px;
+    }
+
+    .btn-vocab:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 0 #6c5ce7;
+    }
+
+    .countdown {
+      font-size: 54px;
+      font-weight: 700;
+      color: #e17055;
+      margin: 20px 0;
+    }
+
+    .small-text {
+      font-size: 15px;
+      color: #999;
+      margin-top: 16px;
+    }
+
+    /* Màn hình chính */
+    #mainScreen {
+      text-align: center;
+      padding: 40px;
+      max-width: 600px;
+      z-index: 5;
+    }
+
+    #mainScreen .bee-big {
+      font-size: 120px;
+      margin-bottom: 24px;
+      animation: wave 2.8s infinite ease-in-out;
+    }
+
+    .hidden { display: none; }
+
+    /* Bảng từ vựng */
+    .vocab-container {
+      flex: 1;
+      overflow-y: auto;
+      margin: 16px 0;
+      padding-right: 6px;
+      max-height: 55vh;
+    }
+
+    .vocab-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+      text-align: left;
+    }
+
+    .vocab-table th, .vocab-table td {
+      padding: 11px 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .vocab-table th {
+      background: #f8f9fa;
+      color: #2c3e50;
+      font-weight: 600;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    .vocab-table tr:hover {
+      background: #f0f4f8;
+    }
+
+    .vocab-table .num {
+      font-weight: 600;
+      color: #636e72;
+      text-align: center;
+    }
+
+    .vocab-table .word {
+      font-weight: 600;
+      color: #0984e3;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      font-size: 32px;
+      color: #b2bec3;
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+
+    .vocab-container::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .vocab-container::-webkit-scrollbar-thumb {
+      background: #a29bfe;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 500px) {
+      .modal { padding: 24px 20px; }
+      h1 { font-size: 28px; }
+      h2 { font-size: 23px; }
+      .bee, .bee-big { font-size: 80px; }
+      .btn { padding: 12px 30px; font-size: 16px; }
+      .homework-preview img { width: 110px; }
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Popup 1 -->
-    <div id="firstPopup" class="popup-overlay">
-        <div class="popup">
-            <div class="emoji">🐰✨</div>
-            <h2>Bạn đã sẵn sàng làm bài chưa nhỉ?</h2>
-            <div class="buttons">
-                <button class="yes-btn" onclick="showMain()">Yes</button>
-                <button class="no-btn" onclick="showSecondPopup()">No</button>
-            </div>
-        </div>
+<!-- Ong bay -->
+<div class="flying-bee">🐝</div>
+<div class="flying-bee">🐝</div>
+<div class="flying-bee">🐝</div>
+<div class="flying-bee">🐝</div>
+
+<!-- Pop-up chào mừng -->
+<div class="modal-overlay" id="welcomeModal">
+  <div class="modal" id="welcomeContent">
+    <button class="close-btn" id="closeWelcome">×</button>
+    <div class="bee">🐝</div>
+    <h2>Chào bạn!</h2>
+
+
+
+    <p>Hãy cùng chú ong chăm chỉ này làm bài tập về nhà nhé!<br>Bạn đã sẵn sàng chưa?</p>
+
+    <div class="btn-group">
+      <button class="btn btn-vocab" id="btnVocab">Xem từ vựng trước 📚</button>
     </div>
 
-    <!-- Popup 2 -->
-    <div id="secondPopup" class="popup-overlay" style="display: none;">
-        <div class="popup">
-            <div class="emoji">😤🐥</div>
-            <h2>Ê! Ê! Ê! Sao lại bấm No thế, bấm Yes đi chứ!</h2>
-            <div class="three-yes">
-                <button class="yes-btn" onclick="showMain()">Yes</button>
-                <button class="yes-btn" onclick="showMain()">Yes</button>
-                <button class="yes-btn" onclick="showMain()">Yes</button>
-            </div>
-        </div>
+    <div class="btn-group">
+      <button class="btn btn-primary" id="btnReady">Sẵn sàng ✧</button>
+      <button class="btn btn-secondary" id="btnNotYet">Chưa đâu ૮₍ ˶•⤙•˶ ₎ა</button>
     </div>
+  </div>
+</div>
 
-    <!-- Màn hình chính -->
-    <div id="mainContent" class="main-content">
-        <h1 class="title">CHÚC BẠN LÀM BÀI TỐT NHÉ! 💕</h1>
-        <p style="font-size: 20px; color: #555; margin: 20px 0;">
-            Click nút dưới để mở bài tập ngay nhé! (mở tab mới, làm thoải mái nha)
-        </p>
-        <button class="start-btn" onclick="openWorksheet()">Mở bài tập ngay! 🐰</button>
+<!-- Modal từ vựng -->
+<div class="modal-overlay" id="vocabModal">
+  <div class="modal" id="vocabContent">
+    <button class="close-btn" id="closeVocab">×</button>
+    <h2>Từ vựng bài học</h2>
+    <p style="font-size: 15.5px;">Hãy xem và ghi nhớ trước khi bắt đầu nhé! 🐝</p>
+
+    <div class="vocab-container">
+      <table class="vocab-table">
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Từ vựng</th>
+            <th>Phiên âm</th>
+            <th>Nghĩa tiếng Việt</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="num">1</td><td class="word">student</td><td>/ˈstjuːdənt/</td><td>học sinh</td></tr>
+          <tr><td class="num">2</td><td class="word">class</td><td>/klɑːs/</td><td>lớp học</td></tr>
+          <tr><td class="num">3</td><td class="word">practice</td><td>/ˈpræk.tɪs/</td><td>luyện tập</td></tr>
+          <tr><td class="num">4</td><td class="word">tae kwon do</td><td>/ˌtaɪ ˌkwɒn ˈdəʊ/</td><td>võ Taekwondo</td></tr>
+          <tr><td class="num">5</td><td class="word">sit</td><td>/sɪt/</td><td>ngồi</td></tr>
+          <tr><td class="num">6</td><td class="word">watch</td><td>/wɒtʃ/</td><td>xem</td></tr>
+          <tr><td class="num">7</td><td class="word">invite</td><td>/ɪnˈvaɪt/</td><td>mời</td></tr>
+          <tr><td class="num">8</td><td class="word">talk</td><td>/tɔːk/</td><td>nói chuyện</td></tr>
+          <tr><td class="num">9</td><td class="word">each other</td><td>/iːtʃ ˈʌðər/</td><td>lẫn nhau</td></tr>
+          <tr><td class="num">10</td><td class="word">like</td><td>/laɪk/</td><td>thích</td></tr>
+          <tr><td class="num">11</td><td class="word">skates</td><td>/skeɪts/</td><td>trượt patin</td></tr>
+          <tr><td class="num">12</td><td class="word">in-line skating</td><td>/ˈɪn.laɪn ˈskeɪ.tɪŋ/</td><td>trượt patin</td></tr>
+          <tr><td class="num">13</td><td class="word">good at</td><td>/ɡʊd æt/</td><td>giỏi về</td></tr>
+          <tr><td class="num">14</td><td class="word">show</td><td>/ʃəʊ/</td><td>chỉ, hướng dẫn</td></tr>
+          <tr><td class="num">15</td><td class="word">alone</td><td>/əˈləʊn/</td><td>một mình</td></tr>
+        </tbody>
+      </table>
     </div>
+  </div>
+</div>
 
-    <script>
-        function showMain() {
-            document.getElementById('firstPopup').style.display = 'none';
-            document.getElementById('secondPopup').style.display = 'none';
-            document.getElementById('mainContent').style.display = 'flex';
-            document.body.style.backgroundColor = '#f0f8ff';
-        }
+<!-- Pop-up đếm ngược -->
+<div class="modal-overlay" id="countdownModal">
+  <div class="modal" id="countdownContent">
+    <div class="bee">🐝💨</div>
+    <h2>Nhanh lên nào!</h2>
+    <p>Bạn có <strong>30 giây</strong> để sẵn sàng<br>Không sẵn sàng cũng phải làm bài đấy nhé!</p>
+    <div class="countdown" id="timer">30</div>
+    <div class="small-text">Đang đếm ngược... ⏳</div>
+  </div>
+</div>
 
-        function showSecondPopup() {
-            document.getElementById('firstPopup').style.display = 'none';
-            document.getElementById('secondPopup').style.display = 'flex';
-        }
+<!-- Màn hình chính khi tắt pop-up -->
+<div id="mainScreen" class="hidden">
+  <div class="bee-big">🐝✨</div>
+  <h1>Chào các em!</h1>
+  <p>Hãy làm bài tập để ngày càng tiến bộ nhé! 💪📚</p>
+  <button class="btn btn-primary" id="btnStartMain" style="font-size: 20px; padding: 18px 48px; margin-top: 32px;">
+    Bắt đầu làm bài 🌐 🚀
+  </button>
+</div>
 
-        function openWorksheet() {
-            // Link trực tiếp - thay bằng link thật nếu khác
-            window.open('https://www.liveworksheets.com/c?a=s&g=FLYERS&s=EBU5&t=Yqy7FnAHYs&sr=y&is=y&ia=y&l=3s&i=otdcnns&r=my&f=dzdfudtz&ms=uz&cd=p-ti3-l---piii0pjznkllpvingnexnzgxg&mw=hs', '_blank');
-            // Nếu dùng link bạn gửi (nhưng hiện 404), thay ở đây:
-            // window.open('https://www.liveworksheets.com/c?a=s&g=FLYERS&s=EBU5&t=Yqy7FnAHYs&sr=y&is=y&ia=y&l=3s&i=otdcnns&r=my&f=dzdfudtz&ms=uz&cd=p-ti3-l---piii0pjznkllpvingnexnzgxg&mw=hs', '_blank');
-        }
-    </script>
+<script>
+  const WORKSHEET_LINK = "https://www.liveworksheets.com/c?a=s&g=FLYERS&s=U7L3&t=Yqy7FnAHYs&sr=y&is=y&ia=y&l=2y&i=otdsscs&r=fr&f=dzdxzuzx&ms=uz&cd=p-ti3-l---piii5ijznppkpesngnmgxgmxg&mw=hs";
+
+  const welcomeOverlay   = document.getElementById('welcomeModal');
+  const vocabOverlay     = document.getElementById('vocabModal');
+  const countdownOverlay = document.getElementById('countdownModal');
+  const mainScreen       = document.getElementById('mainScreen');
+
+  const welcomeContent   = document.getElementById('welcomeContent');
+  const vocabContent     = document.getElementById('vocabContent');
+  const countdownContent = document.getElementById('countdownContent');
+
+  function showModal(overlay, content) {
+    overlay.classList.add('active');
+    setTimeout(() => content.classList.add('active'), 50);
+  }
+
+  function hideModal(overlay, content) {
+    content.classList.remove('active');
+    setTimeout(() => overlay.classList.remove('active'), 400);
+  }
+
+  function showMainScreen() {
+    mainScreen.classList.remove('hidden');
+  }
+
+  function hideAllModals() {
+    [welcomeOverlay, vocabOverlay, countdownOverlay].forEach(ov => {
+      ov.classList.remove('active');
+    });
+  }
+
+  window.addEventListener('load', () => {
+    showModal(welcomeOverlay, welcomeContent);
+    startFlyingBees();
+  });
+
+  document.getElementById('btnVocab').addEventListener('click', () => {
+    showModal(vocabOverlay, vocabContent);
+  });
+
+  document.getElementById('closeVocab').addEventListener('click', () => {
+    hideModal(vocabOverlay, vocabContent);
+    if (!welcomeOverlay.classList.contains('active')) {
+      hideAllModals();
+      showMainScreen();
+    }
+  });
+
+  document.getElementById('closeWelcome').addEventListener('click', () => {
+    hideModal(welcomeOverlay, welcomeContent);
+    hideAllModals();
+    showMainScreen();
+  });
+
+  document.getElementById('btnReady').addEventListener('click', () => {
+    window.location.href = WORKSHEET_LINK;
+  });
+
+  document.getElementById('btnStartMain').addEventListener('click', () => {
+    window.location.href = WORKSHEET_LINK;
+  });
+
+  document.getElementById('btnNotYet').addEventListener('click', () => {
+    hideModal(welcomeOverlay, welcomeContent);
+    setTimeout(() => {
+      showModal(countdownOverlay, countdownContent);
+      startCountdown();
+    }, 450);
+  });
+
+  function startCountdown() {
+    let timeLeft = 30;
+    const timerEl = document.getElementById('timer');
+    const interval = setInterval(() => {
+      timeLeft--;
+      timerEl.textContent = timeLeft;
+      if (timeLeft <= 10) {
+        timerEl.style.color = timeLeft <= 5 ? '#d63031' : '#e67e22';
+      }
+      if (timeLeft <= 0) {
+        clearInterval(interval);
+        window.location.href = WORKSHEET_LINK;
+      }
+    }, 1000);
+  }
+
+  function startFlyingBees() {
+    const bees = document.querySelectorAll('.flying-bee');
+    bees.forEach(bee => resetBee(bee));
+
+    function resetBee(bee) {
+      const duration = Math.random() * 15 + 10;
+      const startX = Math.random() * window.innerWidth;
+      const startY = Math.random() * window.innerHeight;
+      const dx = (Math.random() - 0.5) * window.innerWidth * 2;
+      const dy = (Math.random() - 0.5) * window.innerHeight * 2;
+      const rot = Math.random() * 720 - 360;
+
+      bee.style.left = startX + 'px';
+      bee.style.top = startY + 'px';
+      bee.style.animationDuration = duration + 's';
+      bee.style.setProperty('--dx', dx + 'px');
+      bee.style.setProperty('--dy', dy + 'px');
+      bee.style.setProperty('--rot', rot + 'deg');
+
+      setTimeout(() => resetBee(bee), duration * 1000);
+    }
+  }
+</script>
 
 </body>
 </html>
